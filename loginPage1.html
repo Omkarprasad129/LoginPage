@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+     }
+     body{
+        /* background-color: rgb(188, 188, 188); */
+
+        background-image: url(./images/pexels-pixabay-40799.jpg);
+        height: 100vh;
+     }
+    #parent{
+            height: 500px;
+            width: 800px;
+            border: 1px solid black;
+            border-radius: 10px;
+            margin: 0 auto;
+            margin-top: 50px;
+            background-image: linear-gradient(45deg, darkblue ,rgb(211, 22, 205), violet);
+
+
+            box-shadow: 10px 10px 10px black;
+    }
+    #child{
+        height: 400px;
+        width: 400px;
+        border: 1px solid;
+        margin: 0 auto;
+        margin-top: 50px;
+        background-color: whitesmoke;
+        border-radius: 20px;
+        box-shadow: 5px 5px 20px darkblue;
+    }
+    #child:hover{
+        box-shadow: 5px 5px 20px black;
+    }
+    div h1{
+        text-align: center;
+        margin-top: 20px;
+        text-decoration-line: underline;
+    }
+    .input{
+        margin-top: 40px;
+        margin-left: 100px;
+    }
+    #text{
+        height: 30px;
+        border: none;
+        border-bottom: 1px solid gray;
+        background-color: whitesmoke;
+        outline: 0px;
+    }
+    #pass{
+        height: 30px;
+        border: none;
+        border-bottom: 1px solid gray;
+        background-color: whitesmoke;
+        outline: 0px;
+        
+    }
+    #submit{
+        height: 30px;
+        width: 200px;
+        margin-left: 90px;
+        background-image: linear-gradient(45deg, darkblue ,rgb(211, 22, 205), violet);
+        border: none;
+        border-radius: 20px;
+        outline: 0px;
+        color: white;
+       
+    }
+    #submit:hover{
+        box-shadow: 2px 2px 2px darkmagenta;
+    }
+
+    .logo{
+            margin-left: 145px;
+    }
+
+    h6{
+        color: gray;
+        text-align: center;
+        padding: 10px;
+    }
+
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="child">
+            <h1>Login</h1>
+            
+            <form action="">
+                <div class="input">
+                <label for="">Username</label><br>
+                <input type="text" id="text" placeholder="    Type your username">
+                <br>
+                <br>
+                <label for="">Password</label><br>
+                <input type="password" name="" id="pass" placeholder="    Type your password">
+                </div>
+                <br><br>
+                <div class="submit">
+                <input type="submit" value="Login" id="submit">
+                </div>
+                <br>
+            </form>
+
+            <section>
+                <h6>or sign up using</h6>
+                <div class="logo">
+                  <a href="https://www.facebook.com"> <img src="./images/icons8-facebook-96.png" alt="error" width="30px" height="30px" ></a> 
+                    <a href="https://www.twitter.com"><img src="./images/icons8-twitter-circled-96.png" alt="error" width="30px" height="30px"></a>
+                    <a href="https://accounts.google.com"><img src="./images/icons8-google-plus-96.png" alt="error" width="30px" height="30px"></a>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
